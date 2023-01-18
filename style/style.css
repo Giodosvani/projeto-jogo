@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(31, 31, 31);
+}
+
+header {
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    margin: 20px;
+    font-size: 55pt;
+    color: white;
+}
+
+.tab {
+    color: white;
+    background-color: black;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.opcao a {
+    margin: 20px;
+    cursor: pointer;
+    transition: .2s;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.opcao a:hover {
+    background-color: #f0f8ff3d;
+}
+
+.portfolio {
+    margin: 0px;
+    text-decoration: underline;
+}

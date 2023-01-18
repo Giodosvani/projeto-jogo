@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+
+    <link rel="stylesheet" href="style/game.css">
+
+</head>
+<body>
+
+    <div id="txt" class="tab">
+        <p class="txt1">Hey! Can you hear me?</p>
+
+        <p class="txt2">Silly me! i'm not even talking! <br> *You hear a loud laugh</p>
+    </div>
+
+    <div id="reply" class="reply">
+        <div id="rp1a" class="rp1" onclick="quiet()">"..."</div>
+
+        <div id="rp1b" class="rp1" onclick="hey()">"I can."</div>
+
+        <div id="rp2a" class="rp2" onclick="nexta()">"..."</div>
+
+        <div id="rp3a" class="rp2" onclick="sus()">*Look around*</div>
+
+        <div id="rp3b" class="rp2" onclick="sus()">"Where am i?"</div>
+
+        <div id="rp4a" class="rp2" onclick="final()">You am i. And i am you.</div>
+    </div>
+
+    <script>
+
+        var text = document.getElementById("txt")  
+        var rp1a = document.getElementById("rp1a")
+        var rp1b = document.getElementById("rp1b")
+        var rp2a = document.getElementById("rp2a")
+        var rp3a = document.getElementById("rp3a")
+        var rp4a = document.getElementById("rp4a")
+
+        function quiet() {
+            rp1a.style.display = "none"
+            rp1b.style.display = "none"    
+
+            rp2a.style.display = "block"
+
+            text.innerHTML = "<p>Silly me! I'm not even talking! <br>*You hear a girl laughing out loud</p>"
+        }
+        function hey() {
+
+            rp1a.style.display = "none"
+            rp1b.style.display = "none"    
+
+            rp2a.style.display = "block"
+
+            text.innerHTML = "<p>Silly you! I'm not even talking! <br>*You hear a girl laughing softly</p>"
+        }
+        function nexta() {
+            text.innerHTML = "<p>So... Do you know where you are?</p>"
+            rp2a.style.display = "none"
+            rp3a.style.display = "block"
+            rp3b.style.display = "block"
+        }
+
+        function sus() {
+            text.innerHTML = "<p>Do you know who i am?</p>"
+
+            rp3a.style.display = "none"
+            rp3b.style.display = "none"
+
+            rp4a.style.display = "block"
+        }
+        
+        function final() {
+            text.innerHTML = "<p>We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. We are the same. </p>"
+
+            rp4a.style.display = "none"
+        }
+        </script>
+</body>
+</html>

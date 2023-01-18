@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(31, 31, 31);
+}
+
+.tab, .reply {
+    color: white;
+    background-color: black;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: fit-content;
+    width: 100vh;
+}
+
+.reply {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reply div {
+    cursor: pointer;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .rp2, .txt2 {
+    display: none;
+  }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="style/game.css">
+
+</head>
+<body>
+
+    <div id="txt" class="tab">
+        <p class="txt1">Hey! Consegue me ouvir??</p>
+
+        <p class="txt2">Como eu sou boba! Eu nem mesmo estou falando! <br> *Você escuta uma risada alta.</p>
+    </div>
+
+    <div id="reply" class="reply">
+        <div id="rp1a" class="rp1" onclick="quiet()">"..."</div>
+
+        <div id="rp1b" class="rp1" onclick="hey()">"Eu consigo."</div>
+
+        <div id="rp2a" class="rp2" onclick="nexta()">"..."</div>
+
+        <div id="rp3a" class="rp2" onclick="sus()">*Olhar em volta*</div>
+
+        <div id="rp3b" class="rp2" onclick="sus()">"Onde estou?"</div>
+
+        <div id="rp4a" class="rp2" onclick="final()">Você sou eu. E eu sou você.</div>
+    </div>
+
+    <script>
+
+        var text = document.getElementById("txt")  
+        var rp1a = document.getElementById("rp1a")
+        var rp1b = document.getElementById("rp1b")
+        var rp2a = document.getElementById("rp2a")
+        var rp3a = document.getElementById("rp3a")
+        var rp4a = document.getElementById("rp4a")
+
+        function quiet() {
+            rp1a.style.display = "none"
+            rp1b.style.display = "none"    
+
+            rp2a.style.display = "block"
+
+            text.innerHTML = "<p>Como sou boba! Eu nem mesmo estou falando! <br>*Você escuta uma garota rindo alto.</p>"
+        }
+        function hey() {
+
+            rp1a.style.display = "none"
+            rp1b.style.display = "none"    
+
+            rp2a.style.display = "block"
+
+            text.innerHTML = "<p>Que bobinho! Eu nem mesmo estou falando! <br>*Você escuta uma garota rindo gentilmente.</p>"
+        }
+        function nexta() {
+            text.innerHTML = "<p>Então... Você sabe onde está?</p>"
+            rp2a.style.display = "none"
+            rp3a.style.display = "block"
+            rp3b.style.display = "block"
+        }
+
+        function sus() {
+            text.innerHTML = "<p>Você sabe quem eu sou?</p>"
+
+            rp3a.style.display = "none"
+            rp3b.style.display = "none"
+
+            rp4a.style.display = "block"
+        }
+        
+        function final() {
+            text.innerHTML = "<p>Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. Nós somos os mesmos. </p>"
+
+            rp4a.style.display = "none"
+        }
+        </script>
+</body>
+</html>
